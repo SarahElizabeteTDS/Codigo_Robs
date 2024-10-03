@@ -32,46 +32,50 @@ void loop()
 }
 void praEsquerda() 
 {
-  // Aciona os motores
-  analogWrite(ENA, 180);
-  analogWrite(ENB, 180);
+  // Funciona, mas lento
+  /*
+  analogWrite(ENA, 250);
+  analogWrite(ENB, 250);
   digitalWrite(IN1, LOW);   // A frente
   digitalWrite(IN2, HIGH);  // A tras
   digitalWrite(IN3, LOW);   // B tras
   digitalWrite(IN4, HIGH);  // B frente
-  /*
-  analogWrite(ENA, 200);
-  analogWrite(ENB, 250);
+  */
+  // FUNCIONOUUUUUUU
+  analogWrite(ENA, 0);
+  analogWrite(ENB, 255);
   digitalWrite(IN1, HIGH);   // A f
   digitalWrite(IN2, LOW);  // A t
   digitalWrite(IN3, LOW);   // B t
   digitalWrite(IN4, HIGH);  // B f
-  */
 }
 
 void praDireita() 
 {
-  // Aciona os motores
-  analogWrite(ENA, 180);
-  analogWrite(ENB, 180);
+  // funciona, mas é bem lento
+  /*
+  analogWrite(ENA, 250);
+  analogWrite(ENB, 250);
   digitalWrite(IN1, HIGH); // A f
   digitalWrite(IN2, LOW);  // A t
   digitalWrite(IN3, HIGH); // B t
   digitalWrite(IN4, LOW);  // B f
-  /*
-  analogWrite(ENA, 250);
-  analogWrite(ENB, 200);
+  */
+  // FUNCIONOUUUUUU
+  analogWrite(ENA, 255);
+  analogWrite(ENB, 0);
   digitalWrite(IN1, HIGH);   // A f
   digitalWrite(IN2, LOW);  // A t
   digitalWrite(IN3, LOW);   // B t
   digitalWrite(IN4, HIGH);  // B f
-  */
+
 }
 
 void praFrente() 
 {
-  analogWrite(ENA, 240);
-  analogWrite(ENB, 240);
+
+  analogWrite(ENA, 250);
+  analogWrite(ENB, 250);
   // Aciona os motores no sentido inverso
   digitalWrite(IN1, HIGH);  // A frente
   digitalWrite(IN2, LOW);   // A t
